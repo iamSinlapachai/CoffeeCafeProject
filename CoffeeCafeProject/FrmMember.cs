@@ -20,10 +20,10 @@ namespace CoffeeCafeProject
         private void getAllMemberToListView()
         {
             //Connect String เพื่อติตต่อไปยังฐานข้อมูล
-            string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
+            //string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
 
             //สร้าง connection ไปยังฐานข้อมูล
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(ShareResource.connectionString))
             {
                 try
                 {
@@ -114,10 +114,10 @@ namespace CoffeeCafeProject
             {
                 //save the data product to the database
                 //Connect String เพื่อติตต่อไปยังฐานข้อมูล
-                string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
+                //string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
 
                 //สร้าง connection ไปยังฐานข้อมูล
-                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+                using (SqlConnection sqlConnection = new SqlConnection(ShareResource.connectionString))
                 {
                     try
                     {
@@ -128,8 +128,8 @@ namespace CoffeeCafeProject
                         SqlTransaction sqlTransaction = sqlConnection.BeginTransaction(); // Insert / Update / Delete data in transaction
 
                         //คำสั่ง SQL ให้เพิ่มข้อมูลลงในตาราง product_tb
-                        string strSQL = "INSERT INTO member_tb (memberPhone, memberName ) " +
-                                       "VALUES (@memberPhone, @memberName)";
+                        string strSQL = "INSERT INTO member_tb (memberPhone, memberName, memberScore ) " +
+                                       "VALUES (@memberPhone, @memberName, @memberScore)";
 
 
 
@@ -138,7 +138,7 @@ namespace CoffeeCafeProject
                         {
                             sqlCommand.Parameters.Add("@memberPhone", SqlDbType.NVarChar, 50).Value = tbMemberPhone.Text;
                             sqlCommand.Parameters.Add("@memberName", SqlDbType.NVarChar, 100).Value = tbMemberName.Text.Trim();
-                            
+                            sqlCommand.Parameters.Add("@memberScore", SqlDbType.Int).Value = 0; // Default score for new member
 
 
 
@@ -194,10 +194,10 @@ namespace CoffeeCafeProject
             else
             {
                 //Connect String เพื่อติตต่อไปยังฐานข้อมูล
-                string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
+                //string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
 
                 //สร้าง connection ไปยังฐานข้อมูล
-                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+                using (SqlConnection sqlConnection = new SqlConnection(ShareResource.connectionString))
                 {
                     try
                     {
@@ -242,9 +242,9 @@ namespace CoffeeCafeProject
             if (MessageBox.Show("ต้องการลบสมาชิคนี้ใช่หรือไม่?", "ยืนยันการลบ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 // Connect String เพื่อติตต่อไปยังฐานข้อมูล
-                string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
+                //string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
                 // สร้าง connection ไปยังฐานข้อมูล
-                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+                using (SqlConnection sqlConnection = new SqlConnection(ShareResource.connectionString))
                 {
                     try
                     {

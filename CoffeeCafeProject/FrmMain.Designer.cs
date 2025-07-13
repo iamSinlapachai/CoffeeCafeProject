@@ -94,6 +94,7 @@
             this.btMenu1.TabIndex = 0;
             this.btMenu1.Text = "Menu";
             this.btMenu1.UseVisualStyleBackColor = true;
+            this.btMenu1.Click += new System.EventHandler(this.btMenu1_Click);
             // 
             // btMenu6
             // 
@@ -103,6 +104,7 @@
             this.btMenu6.TabIndex = 2;
             this.btMenu6.Text = "Menu";
             this.btMenu6.UseVisualStyleBackColor = true;
+            this.btMenu6.Click += new System.EventHandler(this.btMenu6_Click);
             // 
             // btMenu7
             // 
@@ -112,6 +114,7 @@
             this.btMenu7.TabIndex = 6;
             this.btMenu7.Text = "Menu";
             this.btMenu7.UseVisualStyleBackColor = true;
+            this.btMenu7.Click += new System.EventHandler(this.btMenu7_Click);
             // 
             // btMenu2
             // 
@@ -121,6 +124,7 @@
             this.btMenu2.TabIndex = 4;
             this.btMenu2.Text = "Menu";
             this.btMenu2.UseVisualStyleBackColor = true;
+            this.btMenu2.Click += new System.EventHandler(this.btMenu2_Click);
             // 
             // btMenu9
             // 
@@ -130,6 +134,7 @@
             this.btMenu9.TabIndex = 14;
             this.btMenu9.Text = "Menu";
             this.btMenu9.UseVisualStyleBackColor = true;
+            this.btMenu9.Click += new System.EventHandler(this.btMenu9_Click);
             // 
             // btMenu4
             // 
@@ -139,6 +144,7 @@
             this.btMenu4.TabIndex = 12;
             this.btMenu4.Text = "Menu";
             this.btMenu4.UseVisualStyleBackColor = true;
+            this.btMenu4.Click += new System.EventHandler(this.btMenu4_Click);
             // 
             // btMenu8
             // 
@@ -148,6 +154,7 @@
             this.btMenu8.TabIndex = 10;
             this.btMenu8.Text = "Menu";
             this.btMenu8.UseVisualStyleBackColor = true;
+            this.btMenu8.Click += new System.EventHandler(this.btMenu8_Click);
             // 
             // btMenu3
             // 
@@ -157,6 +164,7 @@
             this.btMenu3.TabIndex = 8;
             this.btMenu3.Text = "Menu";
             this.btMenu3.UseVisualStyleBackColor = true;
+            this.btMenu3.Click += new System.EventHandler(this.btMenu3_Click);
             // 
             // btMenu10
             // 
@@ -166,6 +174,7 @@
             this.btMenu10.TabIndex = 18;
             this.btMenu10.Text = "Menu";
             this.btMenu10.UseVisualStyleBackColor = true;
+            this.btMenu10.Click += new System.EventHandler(this.btMenu10_Click);
             // 
             // btMenu5
             // 
@@ -176,6 +185,7 @@
             this.btMenu5.TabIndex = 16;
             this.btMenu5.Text = "Menu";
             this.btMenu5.UseVisualStyleBackColor = true;
+            this.btMenu5.Click += new System.EventHandler(this.btMenu5_Click);
             // 
             // groupBox1
             // 
@@ -208,7 +218,7 @@
             // pbMenu10
             // 
             this.pbMenu10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbMenu10.Image = global::CoffeeCafeProject.Properties.Resources.menu;
+            this.pbMenu10.Image = ((System.Drawing.Image)(resources.GetObject("pbMenu10.Image")));
             this.pbMenu10.Location = new System.Drawing.Point(475, 197);
             this.pbMenu10.Name = "pbMenu10";
             this.pbMenu10.Size = new System.Drawing.Size(101, 101);
@@ -219,7 +229,7 @@
             // pbMenu5
             // 
             this.pbMenu5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbMenu5.Image = global::CoffeeCafeProject.Properties.Resources.menu;
+            this.pbMenu5.Image = ((System.Drawing.Image)(resources.GetObject("pbMenu5.Image")));
             this.pbMenu5.Location = new System.Drawing.Point(475, 23);
             this.pbMenu5.Name = "pbMenu5";
             this.pbMenu5.Size = new System.Drawing.Size(101, 101);
@@ -230,7 +240,7 @@
             // pbMenu9
             // 
             this.pbMenu9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbMenu9.Image = global::CoffeeCafeProject.Properties.Resources.menu;
+            this.pbMenu9.Image = ((System.Drawing.Image)(resources.GetObject("pbMenu9.Image")));
             this.pbMenu9.Location = new System.Drawing.Point(360, 197);
             this.pbMenu9.Name = "pbMenu9";
             this.pbMenu9.Size = new System.Drawing.Size(101, 101);
@@ -241,7 +251,7 @@
             // pbMenu4
             // 
             this.pbMenu4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbMenu4.Image = global::CoffeeCafeProject.Properties.Resources.menu;
+            this.pbMenu4.Image = ((System.Drawing.Image)(resources.GetObject("pbMenu4.Image")));
             this.pbMenu4.Location = new System.Drawing.Point(360, 23);
             this.pbMenu4.Name = "pbMenu4";
             this.pbMenu4.Size = new System.Drawing.Size(101, 101);
@@ -252,7 +262,7 @@
             // pbMenu8
             // 
             this.pbMenu8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbMenu8.Image = global::CoffeeCafeProject.Properties.Resources.menu;
+            this.pbMenu8.Image = ((System.Drawing.Image)(resources.GetObject("pbMenu8.Image")));
             this.pbMenu8.Location = new System.Drawing.Point(245, 197);
             this.pbMenu8.Name = "pbMenu8";
             this.pbMenu8.Size = new System.Drawing.Size(101, 101);
@@ -263,7 +273,7 @@
             // pbMenu3
             // 
             this.pbMenu3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbMenu3.Image = global::CoffeeCafeProject.Properties.Resources.menu;
+            this.pbMenu3.Image = ((System.Drawing.Image)(resources.GetObject("pbMenu3.Image")));
             this.pbMenu3.Location = new System.Drawing.Point(245, 23);
             this.pbMenu3.Name = "pbMenu3";
             this.pbMenu3.Size = new System.Drawing.Size(101, 101);
@@ -274,7 +284,7 @@
             // pbMenu7
             // 
             this.pbMenu7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbMenu7.Image = global::CoffeeCafeProject.Properties.Resources.menu;
+            this.pbMenu7.Image = ((System.Drawing.Image)(resources.GetObject("pbMenu7.Image")));
             this.pbMenu7.Location = new System.Drawing.Point(130, 197);
             this.pbMenu7.Name = "pbMenu7";
             this.pbMenu7.Size = new System.Drawing.Size(101, 101);
@@ -285,7 +295,7 @@
             // pbMenu2
             // 
             this.pbMenu2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbMenu2.Image = global::CoffeeCafeProject.Properties.Resources.menu;
+            this.pbMenu2.Image = ((System.Drawing.Image)(resources.GetObject("pbMenu2.Image")));
             this.pbMenu2.Location = new System.Drawing.Point(130, 23);
             this.pbMenu2.Name = "pbMenu2";
             this.pbMenu2.Size = new System.Drawing.Size(101, 101);
@@ -296,7 +306,7 @@
             // pbMenu6
             // 
             this.pbMenu6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbMenu6.Image = global::CoffeeCafeProject.Properties.Resources.menu;
+            this.pbMenu6.Image = ((System.Drawing.Image)(resources.GetObject("pbMenu6.Image")));
             this.pbMenu6.Location = new System.Drawing.Point(15, 197);
             this.pbMenu6.Name = "pbMenu6";
             this.pbMenu6.Size = new System.Drawing.Size(101, 101);
@@ -307,7 +317,7 @@
             // pbMenu1
             // 
             this.pbMenu1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbMenu1.Image = global::CoffeeCafeProject.Properties.Resources.menu;
+            this.pbMenu1.Image = ((System.Drawing.Image)(resources.GetObject("pbMenu1.Image")));
             this.pbMenu1.Location = new System.Drawing.Point(15, 23);
             this.pbMenu1.Name = "pbMenu1";
             this.pbMenu1.Size = new System.Drawing.Size(101, 101);
@@ -339,7 +349,7 @@
             // 
             // btCancel
             // 
-            this.btCancel.Image = global::CoffeeCafeProject.Properties.Resources.reset;
+            this.btCancel.Image = ((System.Drawing.Image)(resources.GetObject("btCancel.Image")));
             this.btCancel.Location = new System.Drawing.Point(47, 432);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(87, 68);
@@ -348,10 +358,11 @@
             this.btCancel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btCancel.UseVisualStyleBackColor = true;
+            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
             // btSave
             // 
-            this.btSave.Image = global::CoffeeCafeProject.Properties.Resources.save;
+            this.btSave.Image = ((System.Drawing.Image)(resources.GetObject("btSave.Image")));
             this.btSave.Location = new System.Drawing.Point(166, 432);
             this.btSave.Name = "btSave";
             this.btSave.Size = new System.Drawing.Size(87, 68);
@@ -360,6 +371,7 @@
             this.btSave.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btSave.UseVisualStyleBackColor = true;
+            this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
             // tbMemberName
             // 
@@ -455,6 +467,7 @@
             this.lvOrderMenu.Size = new System.Drawing.Size(247, 183);
             this.lvOrderMenu.TabIndex = 3;
             this.lvOrderMenu.UseCompatibleStateImageBehavior = false;
+            this.lvOrderMenu.ItemActivate += new System.EventHandler(this.lvOrderMenu_ItemActivate);
             // 
             // tbMemberPhone
             // 
@@ -462,6 +475,7 @@
             this.tbMemberPhone.Name = "tbMemberPhone";
             this.tbMemberPhone.Size = new System.Drawing.Size(101, 20);
             this.tbMemberPhone.TabIndex = 2;
+            this.tbMemberPhone.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbMemberPhone_KeyUp_1);
             // 
             // rdMemberYes
             // 
@@ -472,6 +486,7 @@
             this.rdMemberYes.TabIndex = 1;
             this.rdMemberYes.Text = "เป็นสมาชิก ระบุเบอร์โทร";
             this.rdMemberYes.UseVisualStyleBackColor = true;
+            this.rdMemberYes.CheckedChanged += new System.EventHandler(this.rdMemberYes_CheckedChanged);
             // 
             // rdMenberNo
             // 
@@ -484,6 +499,7 @@
             this.rdMenberNo.TabStop = true;
             this.rdMenberNo.Text = "ไม่เป็นสมาชิก";
             this.rdMenberNo.UseVisualStyleBackColor = true;
+            this.rdMenberNo.CheckedChanged += new System.EventHandler(this.rdMenberNo_CheckedChanged);
             // 
             // label1
             // 
@@ -499,7 +515,7 @@
             // 
             // pictureBox12
             // 
-            this.pictureBox12.Image = global::CoffeeCafeProject.Properties.Resources.cofffeelogo;
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
             this.pictureBox12.Location = new System.Drawing.Point(517, 26);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(55, 55);
@@ -509,7 +525,7 @@
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Image = global::CoffeeCafeProject.Properties.Resources.cofffeelogo;
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
             this.pictureBox11.Location = new System.Drawing.Point(61, 26);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(55, 55);
@@ -519,7 +535,7 @@
             // 
             // btMember
             // 
-            this.btMember.Image = global::CoffeeCafeProject.Properties.Resources.member;
+            this.btMember.Image = ((System.Drawing.Image)(resources.GetObject("btMember.Image")));
             this.btMember.Location = new System.Drawing.Point(330, 477);
             this.btMember.Name = "btMember";
             this.btMember.Size = new System.Drawing.Size(154, 68);
@@ -532,7 +548,7 @@
             // 
             // btMenu
             // 
-            this.btMenu.Image = global::CoffeeCafeProject.Properties.Resources.coffee;
+            this.btMenu.Image = ((System.Drawing.Image)(resources.GetObject("btMenu.Image")));
             this.btMenu.Location = new System.Drawing.Point(153, 477);
             this.btMenu.Name = "btMenu";
             this.btMenu.Size = new System.Drawing.Size(151, 68);
@@ -561,6 +577,7 @@
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main - SAU Coffee Cafe V.1.0";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu5)).EndInit();
