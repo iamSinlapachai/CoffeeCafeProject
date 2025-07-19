@@ -8,6 +8,6 @@ namespace CoffeeCafeProject
 {
     internal class ShareResource
     {
-        public static string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
+        public static string connectionString = @"Server=DESKTOP-BFQFVOC\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
     }
 }
